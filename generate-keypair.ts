@@ -10,4 +10,6 @@ console.log(`✅Generate keypair`);
 const keypairFromEnv = Keypair.fromSecretKey(
     Uint8Array.from(JSON.parse(process.env.SECRET_KEY || "[]"))
 );
+console.log("test");
+
 console.log("✅ Keypair loaded successfully!", keypairFromEnv.publicKey.toBase58());
